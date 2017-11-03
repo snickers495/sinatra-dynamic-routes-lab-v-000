@@ -35,6 +35,6 @@ class App < Sinatra::Base
     else
       @total = @number * @number2
     end
-    @total
+    @total.to_s
   end
 end
