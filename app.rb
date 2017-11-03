@@ -35,6 +35,6 @@ class App < Sinatra::Base
     when "multiply"
       @total = @number * @number2
     end
-    @total.to_s
+    "#{@total}"
   end
 end
