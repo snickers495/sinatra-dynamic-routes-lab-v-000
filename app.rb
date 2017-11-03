@@ -18,16 +18,16 @@ class App < Sinatra::Base
     @number.times.map {"#{@phrase}" }
   end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
     @final_string = ""
-    [1..5].times do |count| 
+    [1..5].times do |count|
       num = params["word#{count}".to_sym]
       @final_string += num
-    end 
+    end
     @final_string
-  end 
+  end
 
-  get '/:operation/:number1/:number2' do 
+  get '/:operation/:number1/:number2' do
 
-  end 
+  end
 end
