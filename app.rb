@@ -28,13 +28,13 @@ class App < Sinatra::Base
     @operation = params[:operation]
     case @operation
     when "add"
-      @total = @number + @number2
+      @total = @number1 + @number2
     when "subtract"
-      @total = @number - @number2
+      @total = @number1 - @number2
     when "divide"
-      @total = @number / @number2
+      @total = @number1 / @number2
     when "multiply"
-      @total = @number * @number2
+      @total = @number1 * @number2
     end
     "#{@total}"
   end
