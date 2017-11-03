@@ -18,5 +18,5 @@ class App < Sinatra::Base
     @number.times do
       "#{@phrase} \n"
     end
-  end 
+  end
 end
