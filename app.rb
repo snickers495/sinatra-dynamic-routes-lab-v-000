@@ -32,7 +32,7 @@ class App < Sinatra::Base
       @total = @number - @number2
     when "divide"
       @total = @number / @number2
-    when "multiply"
+    else
       @total = @number * @number2
     end
     @total
