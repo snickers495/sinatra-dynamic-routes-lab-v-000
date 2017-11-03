@@ -21,7 +21,7 @@ class App < Sinatra::Base
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @final_string = ""
     [1, 2, 3, 4, 5].map do |count|
-      num = params["word#{count}".to_sym]
+      num = params["word#{count}".to_sym] + " "
       @final_string += num
     end
     @final_string
